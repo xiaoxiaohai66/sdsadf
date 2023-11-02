@@ -1,0 +1,6 @@
+const squarelink = new Squarelink('YOUR_API_KEY');
+
+squarelink.showLogin();
+squarelink.onLogin(function (walletAddress, email) {
+  console.log('Connected to Squarelink. Your account: ', walletAddress);
+});
